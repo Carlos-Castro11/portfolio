@@ -5,8 +5,8 @@ import { Hero } from '@/components/hero/hero'
 
 export function AppLayout() {
   return (
-    <div className="container my-5 grid grid-cols-12 gap-12">
-      <div className="col-span-4">
+    <div className="container my-5 flex gap-4">
+      <div>
         <Hero />
       </div>
       <div>

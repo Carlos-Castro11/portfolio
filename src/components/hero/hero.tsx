@@ -1,7 +1,14 @@
-import { Calendar, Mail, MapPin, Phone, PhoneCall } from 'lucide-react'
+import {
+  Calendar,
+  GithubIcon,
+  LinkedinIcon,
+  Mail,
+  MapPin,
+  MessageCircleCodeIcon,
+  Phone,
+} from 'lucide-react'
 import { Cursor, useTypewriter } from 'react-simple-typewriter'
 
-import { Button } from '../ui/button'
 import {
   Card,
   CardContent,
@@ -13,6 +20,7 @@ import {
 import { Separator } from '../ui/separator'
 import { Avatar } from './avatar'
 import { HeroItem } from './hero-item'
+import { HeroLink } from './hero-link'
 
 export function Hero() {
   const [text] = useTypewriter({
@@ -27,7 +35,7 @@ export function Hero() {
         <Avatar />
         <CardTitle>Carlos Castro</CardTitle>
         <CardDescription className="flex flex-col justify-center">
-          Desenvolvedor web
+          Desenvolvedor
           <div>
             {text}
             <Cursor />
@@ -67,17 +75,10 @@ export function Hero() {
           </li>
         </ul>
       </CardContent>
-      <Separator className="mb-4" />
       <CardFooter className="flex gap-4">
-        <Button className="flex w-max gap-4">
-          <PhoneCall />
-        </Button>
-        <Button className="flex w-max gap-4">
-          <PhoneCall />
-        </Button>
-        <Button className="flex w-max gap-4">
-          <PhoneCall />
-        </Button>
+        <HeroLink icon={<MessageCircleCodeIcon />} />
+        <HeroLink icon={<GithubIcon />} />
+        <HeroLink icon={<LinkedinIcon />} />
       </CardFooter>
     </Card>
   )
