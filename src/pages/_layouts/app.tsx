@@ -9,7 +9,7 @@ export function AppLayout() {
       <div>
         <Hero />
       </div>
-      <div>
+      <div className="flex-1">
         <Header />
         <Outlet />
       </div>
