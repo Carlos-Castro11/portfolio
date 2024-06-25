@@ -1,5 +1,6 @@
 import { useLocation } from 'react-router-dom'
 
+import { Nav } from './nav/nav'
 import { ThemeToggle } from './theme/theme-toggle'
 import { TitlePage } from './title-page'
 
@@ -35,22 +36,7 @@ export function Header() {
   return (
     <header className="grid grid-cols-3 items-center justify-center">
       <TitlePage title={page!.title} />
-      <nav className="col-start-2 flex justify-self-center">
-        <ul className="flex gap-6 rounded-md border p-4">
-          <li>
-            <h1>Sobre</h1>
-          </li>
-          <li>
-            <h1>Portfolio</h1>
-          </li>
-          <li>
-            <h1>Currículo</h1>
-          </li>
-          <li>
-            <h1>Contato</h1>
-          </li>
-        </ul>
-      </nav>
+      <Nav />
       <div className="justify-self-end">
         <ThemeToggle />
       </div>
