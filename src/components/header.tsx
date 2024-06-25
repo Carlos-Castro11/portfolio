@@ -12,11 +12,11 @@ interface AppPagesProps {
 const AppPages: AppPagesProps[] = [
   {
     route: '/',
-    title: 'Sobre',
+    title: 'Portfólio',
   },
   {
-    route: '/portfolio',
-    title: 'Portfólio',
+    route: '/about',
+    title: 'Sobre',
   },
   {
     route: '/resume',
