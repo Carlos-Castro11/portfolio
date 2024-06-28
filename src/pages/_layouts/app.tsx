@@ -5,7 +5,7 @@ import { Hero } from '@/components/hero/hero'
 
 export function AppLayout() {
   return (
-    <div className="container my-5 flex gap-4 antialiased">
+    <div className="container flex gap-4 antialiased my-5 lg:bg-red-500">
       <div>
         <Hero />
       </div>

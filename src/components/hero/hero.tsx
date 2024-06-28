@@ -13,7 +13,6 @@ import {
   Card,
   CardContent,
   CardDescription,
-  CardFooter,
   CardHeader,
   CardTitle,
 } from '../ui/card'
@@ -30,7 +29,7 @@ export function Hero() {
   })
 
   return (
-    <Card className="flex flex-col items-center text-center">
+    <Card className="flex flex-col items-center text-center h-full">
       <CardHeader>
         <Avatar />
         <CardTitle>Carlos Castro</CardTitle>
@@ -42,8 +41,8 @@ export function Hero() {
           </div>
         </CardDescription>
       </CardHeader>
-      <Separator className="mb-4" />
-      <CardContent>
+      <Separator />
+      <CardContent className="mt-8 mb-4">
         <ul className="space-y-7">
           <li>
             <HeroItem
@@ -75,11 +74,12 @@ export function Hero() {
           </li>
         </ul>
       </CardContent>
-      <CardFooter className="flex gap-4">
+      <Separator />
+      <div className="flex w-full h-full items-center justify-center gap-4">
         <HeroLink icon={<MessageCircleCodeIcon />} />
         <HeroLink icon={<GithubIcon />} />
         <HeroLink icon={<LinkedinIcon />} />
-      </CardFooter>
+      </div>
     </Card>
   )
 }

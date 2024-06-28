@@ -17,7 +17,7 @@ export function Project({
   description,
 }: ProjectProps) {
   return (
-    <div className="flex flex-col gap-4">
+    <div className="flex flex-col gap-2 ">
       <Link
         className="group relative overflow-hidden"
         to={'https://google.com'}
@@ -25,7 +25,7 @@ export function Project({
       >
         <div className="absolute bottom-0 left-0 z-10 h-full w-full bg-muted opacity-0 transition-all duration-200 group-hover:opacity-80" />
         <img
-          className={`rounded-md transition-all duration-200 group-hover:scale-125`}
+          className={`rounded-md transition-all duration-200 group-hover:scale-125 `}
           src={image}
           alt=""
         />

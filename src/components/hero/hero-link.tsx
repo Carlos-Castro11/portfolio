@@ -7,9 +7,5 @@ interface HeroLinkProps {
 }
 
 export function HeroLink({ icon }: HeroLinkProps) {
-  return (
-    <Button variant="ghost" className="flex w-max gap-4">
-      {icon}
-    </Button>
-  )
+  return <Button variant="ghost">{icon}</Button>
 }
