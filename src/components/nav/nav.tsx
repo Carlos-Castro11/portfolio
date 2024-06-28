@@ -3,7 +3,7 @@ import { NavItem } from './navItem'
 export function Nav() {
   return (
     <nav className="col-start-2 flex justify-self-center">
-      <ul className="flex gap-9 rounded-md border p-4">
+      <ul className="flex gap-4 lg:gap-6 rounded-md border p-4 text-sm lg:text-base">
         <li>
           <NavItem text={'Portfólio'} link="/" />
         </li>
