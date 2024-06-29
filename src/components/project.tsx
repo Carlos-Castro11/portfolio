@@ -30,13 +30,16 @@ export function Project({
           alt=""
         />
       </Link>
-      <div className="flex items-center justify-between">
+      <div
+        className={`flex flex-col 
+          md:flex-row gap-2 md:items-center md:justify-between md:bg-red-500`}
+      >
         <div>
-          <p className="font-semibold">{name}</p>
-          <p>{description}</p>
+          <p className="font-semibold md:text-lg">{name}</p>
+          <p className="text-xs md:text-sm">{description}</p>
         </div>
         <Link to={linkGithub} target="_blank">
-          <Button variant="outline" className="flex gap-2">
+          <Button variant="outline" className="flex gap-2 w-full text-sm">
             Ver código
             <Code2 />
           </Button>
