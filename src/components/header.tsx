@@ -1,6 +1,9 @@
 import { useLocation } from 'react-router-dom'
 
+import useMedia from '@/hooks/useMedia'
+
 import { Nav } from './nav/nav'
+import { NavMobile } from './nav/nav-mobile'
 import { ThemeToggle } from './theme/theme-toggle'
 import { TitlePage } from './title-page'
 
@@ -29,6 +32,7 @@ const AppPages: AppPagesProps[] = [
 ]
 
 export function Header() {
+  const isMobile = useMedia('(max-width: 550px)')
   const { pathname } = useLocation()
 
   const page = AppPages.find((page) => page.route === pathname)
@@ -36,7 +40,7 @@ export function Header() {
   return (
     <header className="grid grid-cols-3 items-center justify-center">
       <TitlePage title={page!.title} />
-      <Nav />
+      {isMobile ? <NavMobile /> : <Nav />}
       <div className="justify-self-end">
         <ThemeToggle />
       </div>
