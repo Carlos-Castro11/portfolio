@@ -4,7 +4,7 @@ import { PROJECTS } from '@/db'
 export function Portfolio() {
   return (
     <>
-      <h1 className="my-4 font-semibold">Desenvolvimento Web</h1>
+      <h1 className="my-4 font-semibold">Publicados</h1>
       <div className="grid grid-cols-2 gap-6">
         {PROJECTS.map((project) => {
           return (

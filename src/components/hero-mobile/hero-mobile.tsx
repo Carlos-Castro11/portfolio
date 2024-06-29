@@ -7,6 +7,7 @@ import {
   MessageCircleCodeIcon,
   Phone,
 } from 'lucide-react'
+import { Cursor, useTypewriter } from 'react-simple-typewriter'
 
 import perfil from '../../assets/images/perfil.png'
 import { HeroItem } from '../hero/hero-item'
@@ -15,13 +16,24 @@ import { Card, CardDescription } from '../ui/card'
 import { Separator } from '../ui/separator'
 
 export function HeroMobile() {
+  const [text] = useTypewriter({
+    words: ['TypeScript', 'React', 'Node', 'C#'],
+    loop: true,
+    delaySpeed: 2000,
+  })
+
   return (
     <Card className="mt-4">
       <div className="flex justify-center gap-10">
         <div className="text-center">
           <img className="max-w-[150px] rounded-md" src={perfil} alt="" />
-          <CardDescription>Desenvolvedor</CardDescription>
-          <p>React</p>
+          <CardDescription className="flex flex-col justify-center">
+            Desenvolvedor
+            <div>
+              {text}
+              <Cursor />
+            </div>
+          </CardDescription>
         </div>
         <div className="space-y-2 flex flex-col my-auto">
           <HeroItem
