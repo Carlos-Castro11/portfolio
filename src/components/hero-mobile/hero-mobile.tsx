@@ -24,7 +24,7 @@ export function HeroMobile() {
 
   return (
     <Card className="mt-4">
-      <div className="flex justify-center gap-10">
+      <div className="flex justify-center gap-2 md:gap-10">
         <div className="text-center">
           <img className="max-w-[150px] rounded-md" src={perfil} alt="" />
           <CardDescription className="flex flex-col justify-center">
@@ -35,16 +35,16 @@ export function HeroMobile() {
             </div>
           </CardDescription>
         </div>
-        <div className="space-y-2 flex flex-col my-auto">
-          <HeroItem
-            fieldName="Email"
-            fieldValue="carloshenriquemg2020@gmail.com"
-            icon={<Mail />}
-          />
+        <div className="space-y-2 flex flex-col my-2 md:flex-none md:grid md:grid-cols-2 md:my-auto">
           <HeroItem
             icon={<Phone />}
             fieldName="Telefone"
             fieldValue="(38) 9 9128-5937"
+          />
+          <HeroItem
+            fieldName="Email"
+            fieldValue="carloshenriquemg2020@gmail.com"
+            icon={<Mail />}
           />
           <HeroItem
             icon={<Calendar />}
@@ -54,11 +54,11 @@ export function HeroMobile() {
           <HeroItem
             icon={<MapPin />}
             fieldName="Localização"
-            fieldValue="Montes Claros, Minas Gerais - Brasil"
+            fieldValue="Minas Gerais - BR"
           />
         </div>
       </div>
-      <Separator className="mt-2" />
+      <Separator className="" />
       <div className="flex justify-center">
         <HeroLink icon={<MessageCircleCodeIcon />} />
         <HeroLink icon={<GithubIcon />} />

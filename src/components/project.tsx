@@ -32,7 +32,7 @@ export function Project({
       </Link>
       <div
         className={`flex flex-col 
-          md:flex-row gap-2 md:items-center md:justify-between md:bg-red-500`}
+          md:flex-row gap-2 md:items-center md:justify-between`}
       >
         <div>
           <p className="font-semibold md:text-lg">{name}</p>
