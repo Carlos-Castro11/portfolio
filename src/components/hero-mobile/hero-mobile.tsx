@@ -24,9 +24,9 @@ export function HeroMobile() {
 
   return (
     <Card className="mt-2">
-      <div className="flex justify-center">
+      <div className="flex p-[0.75px] justify-center">
         <div className="flex gap-1 sm:gap-6 md:gap-10">
-          <div className="text-center flex flex-col items-center">
+          <div className="text-center">
             <img className="max-w-[150px] rounded-md" src={perfil} alt="" />
             <CardDescription className="flex flex-col justify-center">
               Desenvolvedor
@@ -36,7 +36,7 @@ export function HeroMobile() {
               </div>
             </CardDescription>
           </div>
-          <div className="flex-1 space-y-2 flex flex-col my-2 md:flex-none md:grid md:grid-cols-2 md:my-auto">
+          <div className="space-y-2 flex flex-col my-2 md:flex-none md:grid md:grid-cols-2 md:my-auto">
             <HeroItem
               icon={<Phone />}
               fieldName="Telefone"
