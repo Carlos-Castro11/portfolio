@@ -12,7 +12,7 @@ import { Cursor, useTypewriter } from 'react-simple-typewriter'
 import perfil from '../../assets/images/perfil.png'
 import { HeroItem } from '../hero/hero-item'
 import { HeroLink } from '../hero/hero-link'
-import { Card, CardDescription } from '../ui/card'
+import { Card, CardContent, CardDescription, CardHeader } from '../ui/card'
 import { Separator } from '../ui/separator'
 
 export function HeroMobile() {
@@ -23,44 +23,45 @@ export function HeroMobile() {
   })
 
   return (
-    <Card className="mt-2">
-      <div className="flex p-[0.75px] justify-center">
-        <div className="flex gap-1 sm:gap-6 md:gap-10">
-          <div className="text-center">
-            <img className="max-w-[150px] rounded-md" src={perfil} alt="" />
-            <CardDescription className="flex flex-col justify-center">
-              Desenvolvedor
-              <div>
-                {text}
-                <Cursor />
-              </div>
-            </CardDescription>
-          </div>
-          <div className="space-y-2 flex flex-col my-2 md:flex-none md:grid md:grid-cols-2 md:my-auto">
+    <Card className="mt-2 overflow-hidden">
+      <div className="flex">
+        <CardHeader>
+          <img className="max-w-[160px]" src={perfil} alt="" />
+          <CardDescription className="flex flex-col justify-center text-center">
+            Desenvolvedor
+            <div>
+              {text}
+              <Cursor />
+            </div>
+          </CardDescription>
+        </CardHeader>
+        <Separator className="mr-1" orientation="vertical" />
+        <CardContent className="flex items-center">
+          <div className="space-y-2 mt-5">
             <HeroItem
-              icon={<Phone />}
-              fieldName="Telefone"
-              fieldValue="(38) 9 9128-5937"
-            />
-            <HeroItem
-              fieldName="Email"
+              icon={<Mail size={22} />}
               fieldValue="carloshenriquemg2020@gmail.com"
-              icon={<Mail />}
+              fieldName="E-mail"
             />
             <HeroItem
-              icon={<Calendar />}
-              fieldName="Data de nascimento"
-              fieldValue="24/04/2002"
+              icon={<Phone size={22} />}
+              fieldValue="(38) 9 9128-5937"
+              fieldName="Telefone"
             />
             <HeroItem
-              icon={<MapPin />}
+              icon={<MapPin size={22} />}
+              fieldValue="Minas Gerais - Brasil"
               fieldName="Localização"
-              fieldValue="Minas Gerais - BR"
+            />
+            <HeroItem
+              icon={<Calendar size={22} />}
+              fieldValue="24/04/2002"
+              fieldName="Data de nascimento"
             />
           </div>
-        </div>
+        </CardContent>
       </div>
-      <Separator className="" />
+      <Separator />
       <div className="flex justify-center">
         <HeroLink icon={<MessageCircleCodeIcon />} />
         <HeroLink icon={<GithubIcon />} />
