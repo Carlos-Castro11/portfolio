@@ -10,7 +10,7 @@ export function AppLayout() {
   return (
     <>
       {isDesktopLayout ? (
-        <div className="container lg:flex lg:gap-4 antialiased lg:my-5 lg:bg-red-500">
+        <div className="container lg:flex lg:gap-4 antialiased lg:my-5">
           <div>
             <Hero />
           </div>
