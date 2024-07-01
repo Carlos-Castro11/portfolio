@@ -19,7 +19,7 @@ export function NavMobile() {
       />
       <nav
         className={`absolute bg-primary-foreground p-2 z-10 border rounded-md left-0 top-16 w-full
-            transition-all duration-300 opacity-0 translate-y-[20%] ${isMenuMobileActive && 'translate-y-[0%] opacity-100'}
+            transition-all duration-300 opacity-0 translate-y-[20%] ${isMenuMobileActive && 'translate-y-0 opacity-100'}
             `}
       >
         <ul className="space-y-2">

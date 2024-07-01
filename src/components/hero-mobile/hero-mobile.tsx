@@ -23,10 +23,10 @@ export function HeroMobile() {
   })
 
   return (
-    <Card className="mt-2 overflow-hidden">
+    <Card className="my-2 overflow-hidden">
       <div className="flex gap-[0.5px] justify-center">
         <CardHeader className="">
-          <img className="max-w-[160px]" src={perfil} alt="" />
+          <img className="sm:max-w-[160px] max-w-[135px]" src={perfil} alt="" />
           <CardDescription className="flex flex-col justify-center text-center">
             Desenvolvedor
             <div>
