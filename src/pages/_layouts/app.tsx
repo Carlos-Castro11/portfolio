@@ -20,7 +20,7 @@ export function AppLayout() {
           </div>
         </div>
       ) : (
-        <div className="antialiased m-2">
+        <div className="antialiased m-3 sm:m-4">
           <Header />
           <HeroMobile />
           <Outlet />
