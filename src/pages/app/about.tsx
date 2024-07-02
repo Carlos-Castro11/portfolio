@@ -4,7 +4,7 @@ import { AboutCard } from '@/components/about-card'
 
 export function About() {
   return (
-    <div className="space-y-7 mt-7">
+    <div className="space-y-7 mt-7 lg:container">
       <Helmet title="Sobre" />
       <div>
         <h2 className="font-semibold text-muted-foreground">Sobre mim</h2>

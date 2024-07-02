@@ -10,7 +10,7 @@ export function TitlePage({ title }: TitlePageProps) {
         md:text-2xl
         lg:text-3xl 
         font-bold uppercase after:absolute after:-bottom-1 after:left-0 
-        after:h-[4px] after:w-1/6 after:rounded-md after:bg-muted`}
+        after:h-[4px] after:w-1/12 after:rounded-md after:bg-muted`}
     >
       {title}
     </h1>

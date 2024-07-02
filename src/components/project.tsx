@@ -17,15 +17,15 @@ export function Project({
   description,
 }: ProjectProps) {
   return (
-    <div className="flex flex-col gap-2 ">
+    <div className="flex flex-col gap-2 max-w-[415px]">
       <Link
-        className="group relative overflow-hidden"
+        className="group relative overflow-hidden rounded-md"
         to={'https://google.com'}
         target="_blank"
       >
-        <div className="absolute bottom-0 left-0 z-10 h-full w-full bg-muted opacity-0 transition-all duration-200 group-hover:opacity-80" />
+        <div className="absolute bottom-0 left-0 z-10 h-full w-full bg-muted opacity-0 transition-all duration-200 group-hover:opacity-80 rounded-md" />
         <img
-          className={`rounded-md transition-all duration-200 group-hover:scale-125 `}
+          className={`transition-all duration-200 group-hover:scale-125 `}
           src={image}
           alt=""
         />
