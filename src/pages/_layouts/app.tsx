@@ -46,7 +46,10 @@ export function AppLayout() {
             </div>
             <div className="flex-1">
               <Header />
-              <Outlet />
+              <div className="container">
+                <TitlePage title={page!.title} />
+                <Outlet />
+              </div>
             </div>
           </div>
         </>

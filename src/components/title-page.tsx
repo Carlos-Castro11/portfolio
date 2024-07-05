@@ -5,12 +5,11 @@ interface TitlePageProps {
 export function TitlePage({ title }: TitlePageProps) {
   return (
     <h1
-      className={`after:content[''] relative text-lg
+      className={`after:content[''] relative text-lg my-5
         sm:text-xl
         md:text-2xl
-        lg:text-3xl 
         font-bold uppercase after:absolute after:-bottom-1 after:left-0 
-        after:h-[4px] after:w-1/12 after:rounded-md after:bg-muted`}
+        after:h-[4px] after:w-[4%] after:rounded-md after:bg-muted`}
     >
       {title}
     </h1>

@@ -3,7 +3,6 @@ import useMedia from '@/hooks/useMedia'
 import { Nav } from './nav/nav'
 import { NavMobile } from './nav/nav-mobile'
 import { ThemeToggle } from './theme/theme-toggle'
-import { TitlePage } from './title-page'
 
 export function Header() {
   const isMobile = useMedia('(max-width: 550px)')
@@ -22,7 +21,7 @@ export function Header() {
         </header>
       ) : (
         <header className="grid grid-cols-3 items-center justify-center">
-          <TitlePage title={'Carlos Castro'} />
+          <h1 className="font-bold uppercase">Carlos Castro</h1>
           <Nav />
           <div className="justify-self-end">
             <ThemeToggle />
