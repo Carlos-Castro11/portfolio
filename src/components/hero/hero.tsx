@@ -23,7 +23,7 @@ import { HeroLink } from './hero-link'
 
 export function Hero() {
   const [text] = useTypewriter({
-    words: ['TypeScript', 'React', 'Node', 'C#'],
+    words: ['TypeScript', 'React', 'Node', '.NET'],
     loop: true,
     delaySpeed: 2000,
   })

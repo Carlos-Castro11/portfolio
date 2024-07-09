@@ -7,7 +7,7 @@ import { HeroLinkMobile } from './hero-link-mobile'
 
 export function HeroMobile() {
   const [text] = useTypewriter({
-    words: ['TypeScript', 'React', 'Node', 'C#'],
+    words: ['TypeScript', 'React', 'Node', '.NET'],
     loop: true,
     delaySpeed: 2000,
   })
