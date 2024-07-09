@@ -49,7 +49,7 @@ export const EDUCATION: ResumeProps[] = [
   },
   {
     id: 2,
-    title: 'Origamid | React Completo',
+    title: 'Origamid | React',
     status: 'Concluído',
     duration: '60 horas',
     entity: 'Origamid',
@@ -60,7 +60,7 @@ export const EDUCATION: ResumeProps[] = [
   },
   {
     id: 3,
-    title: 'Rocket Seat | React Completo',
+    title: 'Rocket Seat | React',
     status: 'Cursando',
     duration: '64 horas',
     entity: 'Rocket Seat',
@@ -85,7 +85,7 @@ export const EDUCATION: ResumeProps[] = [
 export const JOBS: ResumeProps[] = [
   {
     id: 1,
-    title: 'Estágio em Tecnologia',
+    title: 'Estágio | Tecnologia',
     status: 'Concluído',
     duration: '6 meses',
     entity: 'CAA/NM',
@@ -96,7 +96,7 @@ export const JOBS: ResumeProps[] = [
   },
   {
     id: 2,
-    title: 'Estágio em Desenvolvimento Web',
+    title: 'Estágio | Desenvolvimento Web',
     status: 'Em andamento',
     duration: '1 ano',
     entity: 'Guardian',

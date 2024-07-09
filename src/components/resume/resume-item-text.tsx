@@ -18,8 +18,7 @@ export function ResumeItemText({
   return (
     <div
       className={`relative
-        after:content[''] after:w-3 after:h-3 after:rounded-full after:bg-muted-foreground after:absolute after:-left-[2.6rem] after:bottom-1/2
-        xl:after:-left-[2.62rem]
+        after:content[''] after:w-3 after:h-3 after:rounded-full after:bg-muted-foreground after:absolute after:-left-[2.66rem] after:bottom-1/2
         `}
     >
       <div className="flex gap-2 items-center">
@@ -30,7 +29,9 @@ export function ResumeItemText({
           {duration}
         </span>
       </div>
-      <p className="text-justify text-muted-foreground text-sm">{text}</p>
+      <p className="text-justify text-muted-foreground text-sm max-w-[375px]">
+        {text}
+      </p>
       <div className="flex flex-col">
         <span className="font-semibold text-sm">
           Entidade: <span className="font-normal">{entity}</span>
