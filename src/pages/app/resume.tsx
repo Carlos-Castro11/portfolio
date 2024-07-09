@@ -5,7 +5,7 @@ import { EDUCATION, JOBS } from '@/db'
 
 export function Resume() {
   return (
-    <div className="space-y-8">
+    <div className="space-y-8 xl:space-y-0 xl:flex xl:gap-10">
       <div>
         <ResumeItem
           title="Escolaridade"

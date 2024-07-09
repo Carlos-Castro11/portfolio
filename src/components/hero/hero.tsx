@@ -29,7 +29,7 @@ export function Hero() {
   })
 
   return (
-    <Card className="flex flex-col items-center text-center h-full">
+    <Card className="flex flex-col items-center text-center h-[675px]">
       <CardHeader>
         <Avatar />
         <CardTitle>Carlos Castro</CardTitle>

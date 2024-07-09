@@ -29,7 +29,7 @@ export function ResumeItemText({
           {duration}
         </span>
       </div>
-      <p className="text-justify text-muted-foreground text-sm max-w-[375px]">
+      <p className="text-justify text-muted-foreground text-sm max-w-[375px] sm:max-w-full xl:max-w-[375px]">
         {text}
       </p>
       <div className="flex flex-col">
