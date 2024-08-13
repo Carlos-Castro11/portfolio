@@ -1,6 +1,7 @@
 import { Helmet } from 'react-helmet-async'
 
 import { AboutCard } from '@/components/about-card'
+import { Form } from '@/components/form'
 
 export function About() {
   return (
@@ -27,6 +28,7 @@ export function About() {
           voluptates.
         </p>
       </div>
+      <Form />
     </div>
   )
 }

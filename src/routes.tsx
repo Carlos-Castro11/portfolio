@@ -2,7 +2,6 @@ import { createBrowserRouter } from 'react-router-dom'
 
 import { AppLayout } from './pages/_layouts/app'
 import { About } from './pages/app/about'
-import { Contact } from './pages/app/contact'
 import { Portfolio } from './pages/app/portfolio'
 import { Resume } from './pages/app/resume'
 import { Error } from './pages/base/error'
@@ -26,12 +25,6 @@ export const router = createBrowserRouter([
     element: <AppLayout />,
     errorElement: <Error />,
     children: [{ path: '/resume', element: <Resume /> }],
-  },
-  {
-    path: '/',
-    element: <AppLayout />,
-    errorElement: <Error />,
-    children: [{ path: '/contact', element: <Contact /> }],
   },
   {
     path: '*',
