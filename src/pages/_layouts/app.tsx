@@ -44,7 +44,9 @@ export function AppLayout() {
           <div className="container lg:flex lg:gap-4 antialiased lg:my-5">
             <div className="grid gap-5">
               <Hero />
-              <Graphic />
+              <div className="pl-3">
+                <Graphic />
+              </div>
             </div>
             <div className="flex-1">
               <Header />

@@ -12,7 +12,6 @@ export function Graphic() {
       enabled: false,
     },
     xaxis: {
-      categories: ['React.js', 'Tailwind', 'Typescript', 'C#'],
       labels: {
         style: {
           colors: primary,
@@ -48,23 +47,28 @@ export function Graphic() {
     {
       data: [
         {
-          x: 'teste',
-          y: [5],
-          fillColor: primary,
-        },
-        {
-          x: 'teste2',
-          y: [7],
-          fillColor: primary,
-        },
-        {
-          x: 'teste3',
-          y: [4],
-          fillColor: primary,
-        },
-        {
-          x: 'teste4',
+          x: 'React.js',
           y: [9],
+          fillColor: primary,
+        },
+        {
+          x: 'Typescript',
+          y: [9],
+          fillColor: primary,
+        },
+        {
+          x: 'Python',
+          y: [6],
+          fillColor: primary,
+        },
+        {
+          x: 'C#',
+          y: [8],
+          fillColor: primary,
+        },
+        {
+          x: 'Tailwind',
+          y: [7],
           fillColor: primary,
         },
       ],

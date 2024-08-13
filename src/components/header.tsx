@@ -10,8 +10,7 @@ export function Header() {
   return (
     <>
       {isMobile ? (
-        <header className="grid grid-cols-3 items-center justify-center">
-          <h1 className="font-bold uppercase">Carlos Castro</h1>
+        <header className="flex items-center justify-between">
           <div className="justify-self-center">
             <ThemeToggle />
           </div>
@@ -20,8 +19,7 @@ export function Header() {
           </div>
         </header>
       ) : (
-        <header className="grid grid-cols-3 items-center justify-center">
-          <h1 className="font-bold uppercase">Carlos Castro</h1>
+        <header className="flex items-center justify-between">
           <Nav />
           <div className="justify-self-end">
             <ThemeToggle />
