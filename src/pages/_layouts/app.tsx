@@ -1,5 +1,6 @@
 import { Outlet, useLocation } from 'react-router-dom'
 
+import Graphic from '@/components/graphic'
 import { Header } from '@/components/header'
 import { Hero } from '@/components/hero/hero'
 import { HeroMobile } from '@/components/hero-mobile/hero-mobile'
@@ -41,8 +42,9 @@ export function AppLayout() {
       {isDesktopLayout ? (
         <>
           <div className="container lg:flex lg:gap-4 antialiased lg:my-5">
-            <div>
+            <div className="grid gap-5">
               <Hero />
+              <Graphic />
             </div>
             <div className="flex-1">
               <Header />

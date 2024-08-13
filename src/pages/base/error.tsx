@@ -1,3 +1,4 @@
+import { Helmet } from 'react-helmet-async'
 import { Link, useRouteError } from 'react-router-dom'
 
 export function Error() {
@@ -5,6 +6,7 @@ export function Error() {
 
   return (
     <div className="flex h-screen flex-col items-center justify-center gap-2">
+      <Helmet title="Error" />
       <h1 className="text-4xl font-bold">Oops, algo aconteceu...</h1>
       <p className="text-accent-foreground">
         Um erro aconteceu na aplicação, abaixo você encontra mais detalhes:
