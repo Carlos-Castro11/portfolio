@@ -1,7 +1,7 @@
 import dogs from './assets/images/dogs.jpg'
 import dtMoney from './assets/images/dtmoney.jpg'
 import mf from './assets/images/mf.jpg'
-import muflix from './assets/images/muflix.jpg'
+import muflix from './assets/images/Muflix.jpg'
 import pizzaShop from './assets/images/Pizza_Shop.jpg'
 
 export interface ResumeProps {
