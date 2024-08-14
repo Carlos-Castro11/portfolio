@@ -13,9 +13,6 @@ export function Nav() {
         <li>
           <NavItem text={'Currículo'} link="/resume" />
         </li>
-        {/* <li>
-          <NavItem text={'Contato'} link="/contact" />
-        </li> */}
       </ul>
     </nav>
   )

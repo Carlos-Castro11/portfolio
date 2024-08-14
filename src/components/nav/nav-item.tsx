@@ -17,9 +17,7 @@ export function NavItem({ link, text, icon, onClick }: NavItemProps) {
       onClick={onClick}
       className={`${
         isMobile
-          ? `uppercase font-semibold relative flex gap-2
-           after:content-[''] after:absolute after:bg-gradient-to-r from-primary to-transparent 
-           after:left-0 after:bottom-0 after:w-1/2 after:h-[1.5px]
+          ? `uppercase font-semibold flex gap-2 items-center bg-card p-2 rounded-md
           `
           : `after:content[''] relative font-semibold after:absolute after:bottom-0 
         after:left-0 after:h-[1.5px] after:w-0 after:bg-primary after:transition-all after:duration-300 
