@@ -11,8 +11,9 @@ export function AboutCard() {
       </div>
       <div>
         <p className="text-justify text-primary">
-          Atualmente, trabalho na Guardian como desenvolvedor web, onde me
-          dedico a criar soluções inovadoras para o setor de Recursos Humanos.
+          Atualmente, trabalho na empresa Guardian como desenvolvedor web, onde
+          me dedico a criar soluções inovadoras para o setor de Recursos
+          Humanos.
           <br />
           <br />
           Atuo como desenvolvedor full stack, utilizando C# no back-end para
