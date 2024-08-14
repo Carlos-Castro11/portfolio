@@ -25,8 +25,9 @@ export function ResumeItem({
         <h3 className="font-semibold uppercase text-lg">{title}</h3>
       </div>
       <div
-        className={`ml-16 mt-4 space-y-5 relative
-          after:content[''] after:bg-muted-foreground ${isJobsItem ? 'after:h-[83%]' : 'after:h-[91%]'} after:w-[0.5px] after:absolute after:-left-[2.3rem] after:-top-4
+        className={`ml-10 mt-2 lg:ml-16 lg:mt-4 space-y-5 relative
+          after:content[''] after:bg-muted-foreground ${isJobsItem ? 'after:h-[80%]' : 'after:h-[91%]'} 
+          after:w-[0.5px] after:absolute after:-left-[.8rem] after:-top-2 lg:after:-left-[2.3rem] lg:after:-top-4
         `}
       >
         {data?.map((item) => {

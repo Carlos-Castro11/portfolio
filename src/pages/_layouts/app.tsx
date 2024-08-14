@@ -42,9 +42,9 @@ export function AppLayout() {
       {isDesktopLayout ? (
         <>
           <div className="container lg:flex lg:gap-4 antialiased lg:my-5">
-            <div className="grid gap-5">
+            <div className="max-w-[350px]">
               <Hero />
-              <div className="pl-3">
+              <div className="ml-2 flex justify-center">
                 <Graphic />
               </div>
             </div>

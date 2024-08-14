@@ -49,27 +49,32 @@ export function Graphic() {
         {
           x: 'React.js',
           y: [9],
-          fillColor: '#00d9ff',
+          fillColor: '#2f00d8',
         },
         {
-          x: 'Typescript',
+          x: 'TS',
           y: [9],
-          fillColor: '#00ff80',
+          fillColor: '#00c090',
         },
         {
           x: 'Python',
           y: [6],
-          fillColor: '#00d9ff',
+          fillColor: '#2f00d8',
         },
         {
           x: 'C#',
           y: [8],
-          fillColor: '#00ff80',
+          fillColor: '#00c090',
+        },
+        {
+          x: 'SQL',
+          y: [8],
+          fillColor: '#2f00d8',
         },
         {
           x: 'Tailwind',
           y: [7],
-          fillColor: '#00d9ff',
+          fillColor: '#00c090',
         },
       ],
     },
@@ -77,7 +82,13 @@ export function Graphic() {
 
   return (
     <div className="">
-      <ApexChart options={options} series={series} type="bar" width="350" />
+      <ApexChart
+        className=""
+        options={options}
+        series={series}
+        type="bar"
+        width="380"
+      />
     </div>
   )
 }
