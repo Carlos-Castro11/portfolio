@@ -18,7 +18,8 @@ export function ResumeItemText({
   return (
     <div
       className={`relative
-        after:content[''] after:w-3 after:h-3 after:rounded-full after:bg-muted-foreground after:absolute after:-left-[1.1rem] lg:after:-left-[2.66rem] after:bottom-1/2
+        after:content[''] after:w-3 after:h-3 after:rounded-full after:bg-muted-foreground 
+        after:absolute after:-left-[18.52px] lg:after:-left-[2.65rem] after:bottom-1/2
         `}
     >
       <div className="flex gap-2 items-center">

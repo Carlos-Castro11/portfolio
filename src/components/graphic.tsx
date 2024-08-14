@@ -48,33 +48,33 @@ export function Graphic() {
       data: [
         {
           x: 'React.js',
-          y: [9],
-          fillColor: '#2f00d8',
+          y: [8],
+          fillColor: primary,
         },
         {
           x: 'TS',
           y: [9],
-          fillColor: '#00c090',
+          fillColor: primary,
         },
         {
           x: 'Python',
           y: [6],
-          fillColor: '#2f00d8',
+          fillColor: primary,
         },
         {
           x: 'C#',
-          y: [8],
-          fillColor: '#00c090',
+          y: [10],
+          fillColor: primary,
         },
         {
           x: 'SQL',
           y: [8],
-          fillColor: '#2f00d8',
+          fillColor: primary,
         },
         {
           x: 'Tailwind',
-          y: [7],
-          fillColor: '#00c090',
+          y: [5],
+          fillColor: primary,
         },
       ],
     },
