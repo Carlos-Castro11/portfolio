@@ -26,7 +26,7 @@ export function ResumeItem({
       </div>
       <div
         className={`ml-10 mt-2 lg:ml-16 lg:mt-4 space-y-5 relative
-          after:content[''] after:bg-muted-foreground ${isJobsItem ? 'after:h-[80%]' : 'after:h-[91%]'} 
+          after:content[''] after:bg-muted-foreground ${isJobsItem ? 'after:h-[77%]' : 'after:h-[90%]'} 
           after:w-[0.5px] after:absolute after:-left-[.85rem] after:-top-2 lg:after:-left-[2.3rem] lg:after:-top-4
         `}
       >

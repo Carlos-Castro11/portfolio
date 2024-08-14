@@ -54,11 +54,11 @@ export function Form() {
     <>
       <Toaster position="top-center" richColors />
       <form
-        className="border rounded-md p-3 space-y-3"
+        className="border rounded-md p-3 space-y-2"
         onSubmit={handleSubmit(handleSendEmail)}
       >
         <h3>Entre em contato comigo!</h3>
-        <div className="grid grid-cols-2 gap-4">
+        <div className="grid md:grid-cols-2 gap-2">
           <div>
             <Label htmlFor="name">Nome</Label>
             <Input

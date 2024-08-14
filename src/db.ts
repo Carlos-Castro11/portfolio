@@ -99,8 +99,9 @@ export const EDUCATION: ResumeProps[] = [
     duration: '100 horas',
     entity: 'Rocket Seat',
     text: `
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, qui ad exercitationem dolores,
-      a fuga vitae tenetur similique ex dolore
+      O curso é projetado para ensinar desde conceitos básicos até avançados da linguagem, 
+      com foco em práticas modernas e no ecossistema 
+      .NET, preparando os alunos para o mercado de trabalho, principalmente com APIs.
     `,
   },
 ]
@@ -113,8 +114,9 @@ export const JOBS: ResumeProps[] = [
     duration: '6 meses',
     entity: 'CAA/NM',
     text: `
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, qui ad exercitationem dolores, 
-        a fuga vitae tenetur similique ex dolore
+        Durante meu estágio, aprendi conceitos de computação, Linux, 
+        infraestrutura, redes e habilidades interpessoais. 
+        Essa experiência foi essencial para meu crescimento profissional e pessoal.
       `,
   },
   {
@@ -124,8 +126,9 @@ export const JOBS: ResumeProps[] = [
     duration: '1 ano',
     entity: 'Guardian',
     text: `
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, qui ad exercitationem dolores, 
-        a fuga vitae tenetur similique ex dolore
+        Atualmente, estou envolvido em todas as etapas do desenvolvimento de software, 
+        desde o levantamento de requisitos até o deploy para produção. 
+        Trabalho no back-end e front-end, utilizando C# e React.js, e bancos de dados SQL.
       `,
   },
 ]

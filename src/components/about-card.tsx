@@ -7,10 +7,12 @@ export function AboutCard() {
     <Card className="p-4">
       <div className="flex gap-2 mb-3 items-center">
         <Code2 />
-        <h3 className="text-lg uppercase font-semibold">Desenvolvimento web</h3>
+        <h3 className="md:text-lg text-md uppercase font-semibold">
+          Desenvolvimento web
+        </h3>
       </div>
       <div>
-        <p className="text-justify text-primary">
+        <p className="text-justify text-primary text-sm md:text-base">
           Atualmente, trabalho na empresa Guardian como desenvolvedor web, onde
           me dedico a criar soluções inovadoras para o setor de Recursos
           Humanos.

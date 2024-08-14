@@ -9,7 +9,7 @@ export function About() {
       <Helmet title="Sobre" />
       <div>
         <h2 className="font-semibold text-muted-foreground">Sobre mim</h2>
-        <p className="text-justify">
+        <p className="text-justify text-sm md:text-base">
           Meu nome é Carlos Castro, tenho 22 anos e estou cursando Engenharia de
           Software no ano de 2022. Desde que comecei meus estudos, desenvolvi
           uma paixão intensa por desenvolvimento web, uma área que me fascina
