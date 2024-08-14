@@ -1,6 +1,8 @@
 import { GithubIcon, LinkedinIcon, MessageCircleCodeIcon } from 'lucide-react'
 import { Cursor, useTypewriter } from 'react-simple-typewriter'
 
+import { LINKS } from '@/constants'
+
 import perfil from '../../assets/images/perfil.png'
 import { Card, CardDescription } from '../ui/card'
 import { HeroLinkMobile } from './hero-link-mobile'
@@ -33,17 +35,17 @@ export function HeroMobile() {
           <HeroLinkMobile
             icon={<LinkedinIcon />}
             text="Linkedin"
-            link={'https://www.linkedin.com/in/carloshcsousa/'}
+            link={LINKS.LINKEDIN}
           />
           <HeroLinkMobile
             icon={<GithubIcon />}
             text="Github"
-            link={'https://github.com/Carlos-Castro11?tab=repositories'}
+            link={LINKS.GITHUB}
           />
           <HeroLinkMobile
             icon={<MessageCircleCodeIcon />}
             text="Whatsapp"
-            link={'https://github.com/Carlos-Castro11?tab=repositories'}
+            link={LINKS.WHATSAPP}
           />
         </div>
       </div>

@@ -9,6 +9,8 @@ import {
 } from 'lucide-react'
 import { Cursor, useTypewriter } from 'react-simple-typewriter'
 
+import { LINKS } from '@/constants'
+
 import {
   Card,
   CardContent,
@@ -76,18 +78,9 @@ export function Hero() {
       </CardContent>
       <Separator />
       <div className="flex w-full h-full items-center justify-center gap-4">
-        <HeroLink
-          icon={<MessageCircleCodeIcon />}
-          link={'https://github.com/Carlos-Castro11?tab=repositories'}
-        />
-        <HeroLink
-          icon={<GithubIcon />}
-          link={'https://github.com/Carlos-Castro11?tab=repositories'}
-        />
-        <HeroLink
-          icon={<LinkedinIcon />}
-          link={'https://www.linkedin.com/in/carloshcsousa/'}
-        />
+        <HeroLink icon={<MessageCircleCodeIcon />} link={LINKS.WHATSAPP} />
+        <HeroLink icon={<GithubIcon />} link={LINKS.GITHUB} />
+        <HeroLink icon={<LinkedinIcon />} link={LINKS.LINKEDIN} />
       </div>
     </Card>
   )
