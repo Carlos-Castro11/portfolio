@@ -6,7 +6,7 @@ import { Textarea } from './ui/textarea'
 export function Form() {
   return (
     <>
-      <form className="border rounded-md p-3 space-y-4">
+      <form className="border rounded-md p-3 space-y-3">
         <h3>Formulário para contato</h3>
         <div>
           <Label htmlFor="subject">Assunto</Label>

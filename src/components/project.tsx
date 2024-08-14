@@ -7,6 +7,7 @@ interface ProjectProps {
   name: string
   image: string
   linkGithub: string
+  link: string
   description: string
 }
 
@@ -14,13 +15,14 @@ export function Project({
   name,
   image,
   linkGithub,
+  link,
   description,
 }: ProjectProps) {
   return (
-    <div className="flex flex-col gap-2 max-w-[415px]">
+    <div className="flex flex-col gap-2 max-w-[375px]">
       <Link
         className="group relative overflow-hidden rounded-md"
-        to={'https://google.com'}
+        to={link}
         target="_blank"
       >
         <div className="absolute bottom-0 left-0 z-10 h-full w-full bg-muted opacity-0 transition-all duration-200 group-hover:opacity-80 rounded-md" />

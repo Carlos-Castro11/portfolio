@@ -7,8 +7,8 @@ export function Portfolio() {
   return (
     <div className="flex justify-center flex-col gap-3">
       <Helmet title="Portfólio" />
-      <h3 className="font-semibold text-muted-foreground">Publicados</h3>
-      <div className="grid grid-cols-2 gap-y-6 gap-x-10">
+      {/* <h3 className="font-semibold text-muted-foreground">Publicados</h3> */}
+      <div className="grid grid-cols-2 gap-y-6 gap-x-6 2xl:gap-x-0">
         {PROJECTS.map((project) => {
           return (
             <Project
@@ -16,6 +16,7 @@ export function Portfolio() {
               name={project.name}
               image={project.image}
               linkGithub={project.linkGithub}
+              link={project.link}
               description={project.description}
             />
           )

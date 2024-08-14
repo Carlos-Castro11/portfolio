@@ -30,9 +30,21 @@ export function HeroMobile() {
           </CardDescription>
         </div>
         <div className="flex flex-col flex-1 gap-3 place-content-center">
-          <HeroLinkMobile icon={<LinkedinIcon />} text="Linkedin" />
-          <HeroLinkMobile icon={<GithubIcon />} text="Github" />
-          <HeroLinkMobile icon={<MessageCircleCodeIcon />} text="Whatsapp" />
+          <HeroLinkMobile
+            icon={<LinkedinIcon />}
+            text="Linkedin"
+            link={'https://www.linkedin.com/in/carloshcsousa/'}
+          />
+          <HeroLinkMobile
+            icon={<GithubIcon />}
+            text="Github"
+            link={'https://github.com/Carlos-Castro11?tab=repositories'}
+          />
+          <HeroLinkMobile
+            icon={<MessageCircleCodeIcon />}
+            text="Whatsapp"
+            link={'https://github.com/Carlos-Castro11?tab=repositories'}
+          />
         </div>
       </div>
     </Card>

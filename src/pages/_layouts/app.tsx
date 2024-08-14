@@ -50,7 +50,7 @@ export function AppLayout() {
             </div>
             <div className="flex-1">
               <Header />
-              <div className="container">
+              <div className="">
                 <TitlePage title={page!.title} />
                 <Outlet />
               </div>

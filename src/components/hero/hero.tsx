@@ -42,7 +42,7 @@ export function Hero() {
         </CardDescription>
       </CardHeader>
       <Separator />
-      <CardContent className="mt-8 mb-4">
+      <CardContent className="mt-6 mb-4">
         <ul className="space-y-7">
           <li>
             <HeroItem
@@ -76,9 +76,18 @@ export function Hero() {
       </CardContent>
       <Separator />
       <div className="flex w-full h-full items-center justify-center gap-4">
-        <HeroLink icon={<MessageCircleCodeIcon />} />
-        <HeroLink icon={<GithubIcon />} />
-        <HeroLink icon={<LinkedinIcon />} />
+        <HeroLink
+          icon={<MessageCircleCodeIcon />}
+          link={'https://github.com/Carlos-Castro11?tab=repositories'}
+        />
+        <HeroLink
+          icon={<GithubIcon />}
+          link={'https://github.com/Carlos-Castro11?tab=repositories'}
+        />
+        <HeroLink
+          icon={<LinkedinIcon />}
+          link={'https://www.linkedin.com/in/carloshcsousa/'}
+        />
       </div>
     </Card>
   )
