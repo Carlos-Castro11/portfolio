@@ -38,7 +38,9 @@ export function Project({
       >
         <div>
           <p className="font-semibold md:text-lg">{name}</p>
-          <p className="text-xs md:text-sm">{description}</p>
+          <p className="text-xs md:text-sm text-muted-foreground">
+            {description}
+          </p>
         </div>
         <Link to={linkGithub} target="_blank">
           <Button variant="outline" className="flex gap-2 w-full text-sm">

@@ -1,7 +1,7 @@
 import dogs from './assets/images/dogs.jpg'
-import dtMoney from './assets/images/DT_Money.jpg'
-import mf from './assets/images/marquesefinelli.jpg'
-import muflix from './assets/images/Muflix.jpg'
+import dtMoney from './assets/images/dtmoney.jpg'
+import mf from './assets/images/mf.jpg'
+import muflix from './assets/images/muflix.jpg'
 import pizzaShop from './assets/images/Pizza_Shop.jpg'
 
 export interface ResumeProps {
@@ -43,7 +43,7 @@ export const PROJECTS = [
     name: 'Marques e Finelli',
     description: 'Empreendimentos imobiliarios.',
     linkGithub: 'https://github.com/Carlos-Castro11/MF2.0',
-    link: 'https://www.marquesefinelliemp.com',
+    link: 'https://marquesefinelli.com.br/',
     image: mf,
   },
   {
