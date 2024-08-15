@@ -43,6 +43,8 @@ export function ResumeItem({
               text={item.text}
               status={item.status}
               entity={item.entity}
+              officialLink={item.officialLink}
+              workType={item.worktType}
             />
           )
         })}

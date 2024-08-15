@@ -1,13 +1,17 @@
-import { Clock } from 'lucide-react'
+import { Plus } from 'lucide-react'
 
-import useMedia from '@/hooks/useMedia'
+import { ResumeItemDialog } from '../resume-item-dialog'
+import { Button } from '../ui/button'
+import { Dialog, DialogTrigger } from '../ui/dialog'
 
 interface ResumeItemTextProps {
   title: string
   text: string
-  status: string
+  status: 'completed' | 'inProgress'
   duration: string
   entity: string
+  officialLink: string
+  workType: string
 }
 
 export function ResumeItemText({
@@ -16,8 +20,9 @@ export function ResumeItemText({
   status,
   duration,
   entity,
+  officialLink,
+  workType,
 }: ResumeItemTextProps) {
-  const isMobile = useMedia('(max-width: 450px)')
   return (
     <div
       className={`relative
@@ -27,32 +32,28 @@ export function ResumeItemText({
     >
       <div className="flex gap-2 items-center">
         <h1 className="font-semibold uppercase text-sm text-nowrap">{title}</h1>
-        -
-        <span className="flex gap-2 items-center">
-          <Clock size={20} />
-          {duration}
-        </span>
       </div>
       <p className="text-justify text-muted-foreground text-sm max-w-[375px] sm:max-w-full xl:max-w-[375px]">
         {text}
       </p>
-      <div className="flex flex-col">
-        <span className="font-semibold text-sm">
-          Entidade: <span className="font-normal">{entity}</span>
-        </span>
-        <span className="font-semibold text-sm">
-          Status:{' '}
-          <span
-            className={`font-normal relative
-              after:content-[''] ${status === 'inProgress' ? 'after:bg-amber-500 after:left-[63px]' : 'after:bg-emerald-500 after:left-[68px]'} 
-              after:h-2 after:w-2 after:absolute after:rounded-full
-              ${isMobile ? 'after:top-[5px]' : 'after:top-[7px]'}
-            `}
+      <Dialog>
+        <DialogTrigger asChild>
+          <Button
+            variant={'secondary'}
+            className="px-2 text-xs flex gap-1 mt-1"
           >
-            {status === 'inProgress' ? 'Em curso' : 'Concluído'}
-          </span>
-        </span>
-      </div>
+            Detalhes <Plus size={16} />
+          </Button>
+        </DialogTrigger>
+        <ResumeItemDialog
+          status={status}
+          entity={entity}
+          duration={duration}
+          title={title}
+          officialLink={officialLink}
+          workType={workType}
+        />
+      </Dialog>
     </div>
   )
 }
