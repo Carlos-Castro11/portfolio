@@ -19,7 +19,7 @@ export function ResumeItemText({
     <div
       className={`relative
         after:content[''] after:w-3 after:h-3 after:rounded-full after:bg-muted-foreground 
-        after:absolute after:-left-[18.52px] lg:after:-left-[2.65rem] after:bottom-1/2
+        after:absolute after:-left-[19px] lg:after:-left-[2.62rem] after:bottom-1/2
         `}
     >
       <div className="flex gap-2 items-center">
@@ -41,8 +41,9 @@ export function ResumeItemText({
           Status:{' '}
           <span
             className={`font-normal relative
-              after:content-[''] ${status === 'inProgress' ? 'after:bg-amber-500' : 'after:bg-emerald-500'} after:h-2 after:w-2 after:absolute after:rounded-full
-              after:top-[40%] after:left-[110%] lg:after:top-[38%]
+              after:content-[''] ${status === 'inProgress' ? 'after:bg-amber-500 after:left-[63px]' : 'after:bg-emerald-500 after:left-[68px]'} 
+              after:h-2 after:w-2 after:absolute after:rounded-full
+              after:top-[7px]
             `}
           >
             {status === 'inProgress' ? 'Em curso' : 'Concluído'}
