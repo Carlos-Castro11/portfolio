@@ -7,7 +7,7 @@ import pizzaShop from './assets/images/Pizza_Shop.jpg'
 export interface ResumeProps {
   id: number
   title: string
-  status: string
+  status: 'completed' | 'inProgress'
   duration: string
   entity: string
   text: string
@@ -25,7 +25,7 @@ export const PROJECTS = [
   {
     id: 2,
     name: 'Pizzashop',
-    description: 'Gerenciamento de pedidos',
+    description: 'Gerenciamento de pedidos.',
     linkGithub: 'https://github.com/Carlos-Castro11/pizzashop-web',
     link: 'https://github.com/Carlos-Castro11/pizzashop-web',
     image: pizzaShop,
@@ -41,7 +41,7 @@ export const PROJECTS = [
   {
     id: 4,
     name: 'Marques e Finelli',
-    description: 'Empreendimentos imobiliarios.',
+    description: 'Imobiliária.',
     linkGithub: 'https://github.com/Carlos-Castro11/MF2.0',
     link: 'https://marquesefinelli.com.br/',
     image: mf,
@@ -60,7 +60,7 @@ export const EDUCATION: ResumeProps[] = [
   {
     id: 1,
     title: 'Engenharia de software',
-    status: 'Cursando',
+    status: 'inProgress',
     duration: '5 anos',
     entity: 'Unicesumar',
     text: `
@@ -71,7 +71,7 @@ export const EDUCATION: ResumeProps[] = [
   {
     id: 2,
     title: 'Origamid | React',
-    status: 'Concluído',
+    status: 'completed',
     duration: '60 horas',
     entity: 'Origamid',
     text: `
@@ -83,7 +83,7 @@ export const EDUCATION: ResumeProps[] = [
   {
     id: 3,
     title: 'Rocket Seat | React',
-    status: 'Cursando',
+    status: 'inProgress',
     duration: '64 horas',
     entity: 'Rocket Seat',
     text: `
@@ -95,7 +95,7 @@ export const EDUCATION: ResumeProps[] = [
   {
     id: 4,
     title: 'Rocket Seat | C#',
-    status: 'Cursando',
+    status: 'inProgress',
     duration: '100 horas',
     entity: 'Rocket Seat',
     text: `
@@ -110,7 +110,7 @@ export const JOBS: ResumeProps[] = [
   {
     id: 1,
     title: 'Estágio | TI',
-    status: 'Concluído',
+    status: 'completed',
     duration: '6 meses',
     entity: 'CAA/NM',
     text: `
@@ -122,7 +122,7 @@ export const JOBS: ResumeProps[] = [
   {
     id: 2,
     title: 'Estágio | Desenvolvimento',
-    status: 'Em andamento',
+    status: 'inProgress',
     duration: '1 ano',
     entity: 'Guardian',
     text: `

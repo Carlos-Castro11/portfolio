@@ -48,7 +48,7 @@ export function Graphic() {
       data: [
         {
           x: 'React.js',
-          y: [8],
+          y: [9],
           fillColor: primary,
         },
         {
@@ -57,13 +57,13 @@ export function Graphic() {
           fillColor: primary,
         },
         {
-          x: 'Python',
-          y: [6],
+          x: 'Inglês',
+          y: [8],
           fillColor: primary,
         },
         {
           x: 'C#',
-          y: [10],
+          y: [8],
           fillColor: primary,
         },
         {
@@ -73,7 +73,7 @@ export function Graphic() {
         },
         {
           x: 'Tailwind',
-          y: [5],
+          y: [7],
           fillColor: primary,
         },
       ],

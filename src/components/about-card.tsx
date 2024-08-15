@@ -13,16 +13,13 @@ export function AboutCard() {
       </div>
       <div>
         <p className="text-justify text-primary text-sm md:text-base">
-          Atualmente, trabalho na empresa Guardian como desenvolvedor web, onde
-          me dedico a criar soluções inovadoras para o setor de Recursos
-          Humanos.
-          <br />
-          <br />
-          Atuo como desenvolvedor full stack, utilizando C# no back-end para
-          garantir uma base sólida e eficiente, enquanto no front-end, utilizo
-          React.js para criar interfaces de usuário modernas e responsivas. Essa
-          combinação de tecnologias me permite desenvolver aplicações robustas e
-          escaláveis, alinhadas com as necessidades dos nossos clientes.
+          Atualmente atuo como desenvolvedor full stack na Guardian RH,
+          utilizando C# no back-end e SQL no gerenciamento do banco de dados
+          para garantir uma base sólida e eficiente, enquanto no front-end,
+          utilizo React.js para criar interfaces de usuário modernas e
+          responsivas. Essa combinação de tecnologias me permite desenvolver
+          aplicações robustas e escaláveis, alinhadas com as necessidades dos
+          nossos clientes.
         </p>
       </div>
     </Card>

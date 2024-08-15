@@ -38,7 +38,15 @@ export function ResumeItemText({
           Entidade: <span className="font-normal">{entity}</span>
         </span>
         <span className="font-semibold text-sm">
-          Status: <span className="font-normal">{status}</span>
+          Status:{' '}
+          <span
+            className={`font-normal relative
+              after:content-[''] ${status === 'inProgress' ? 'after:bg-amber-500' : 'after:bg-emerald-500'} after:h-2 after:w-2 after:absolute after:rounded-full
+              after:top-[40%] after:left-[110%] lg:after:top-[38%]
+            `}
+          >
+            {status === 'inProgress' ? 'Em curso' : 'Concluído'}
+          </span>
         </span>
       </div>
     </div>

@@ -1,6 +1,8 @@
 import { Code2 } from 'lucide-react'
 import { Link } from 'react-router-dom'
 
+import useMedia from '@/hooks/useMedia'
+
 import { Button } from './ui/button'
 
 interface ProjectProps {
@@ -18,6 +20,8 @@ export function Project({
   link,
   description,
 }: ProjectProps) {
+  const isMobile = useMedia('(max-width: 480px)')
+
   return (
     <div className="flex flex-col gap-2 max-w-[375px]">
       <Link
@@ -38,9 +42,11 @@ export function Project({
       >
         <div>
           <p className="font-semibold md:text-lg">{name}</p>
-          <p className="text-xs md:text-sm text-muted-foreground">
-            {description}
-          </p>
+          {!isMobile && (
+            <p className="text-xs md:text-sm text-muted-foreground">
+              {description}
+            </p>
+          )}
         </div>
         <Link to={linkGithub} target="_blank">
           <Button variant="outline" className="flex gap-2 w-full text-sm">
