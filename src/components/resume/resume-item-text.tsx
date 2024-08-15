@@ -1,5 +1,7 @@
 import { Clock } from 'lucide-react'
 
+import useMedia from '@/hooks/useMedia'
+
 interface ResumeItemTextProps {
   title: string
   text: string
@@ -15,6 +17,7 @@ export function ResumeItemText({
   duration,
   entity,
 }: ResumeItemTextProps) {
+  const isMobile = useMedia('(max-width: 450px)')
   return (
     <div
       className={`relative
@@ -43,7 +46,7 @@ export function ResumeItemText({
             className={`font-normal relative
               after:content-[''] ${status === 'inProgress' ? 'after:bg-amber-500 after:left-[63px]' : 'after:bg-emerald-500 after:left-[68px]'} 
               after:h-2 after:w-2 after:absolute after:rounded-full
-              after:top-[7px]
+              ${isMobile ? 'after:top-[5px]' : 'after:top-[7px]'}
             `}
           >
             {status === 'inProgress' ? 'Em curso' : 'Concluído'}
