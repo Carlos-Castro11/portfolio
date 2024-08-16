@@ -1,3 +1,4 @@
+import { useEffect, useState } from 'react'
 import ApexChart from 'react-apexcharts'
 
 import { useTheme } from './theme/theme-provider'
@@ -5,7 +6,18 @@ import { useTheme } from './theme/theme-provider'
 export function Graphic() {
   const { theme } = useTheme()
 
-  const primary = theme === 'dark' ? '#fff' : '#000'
+  const [barColor, setBarColor] = useState<string>('#fff')
+
+  useEffect(() => {
+    if (theme === 'system') {
+      const systemTheme = window.matchMedia('(prefers-color-scheme: dark)')
+        .matches
+        ? 'dark'
+        : 'light'
+      systemTheme === 'dark' ? setBarColor('#fff') : setBarColor('#000')
+    }
+    if (theme === 'light') setBarColor('#000')
+  }, [theme])
 
   const options: ApexCharts.ApexOptions | undefined = {
     tooltip: {
@@ -14,7 +26,7 @@ export function Graphic() {
     xaxis: {
       labels: {
         style: {
-          colors: primary,
+          colors: barColor,
         },
       },
     },
@@ -49,32 +61,32 @@ export function Graphic() {
         {
           x: 'React.js',
           y: [9],
-          fillColor: primary,
+          fillColor: barColor,
         },
         {
           x: 'TS',
           y: [9],
-          fillColor: primary,
+          fillColor: barColor,
         },
         {
           x: 'Inglês',
           y: [8],
-          fillColor: primary,
+          fillColor: barColor,
         },
         {
           x: 'C#',
           y: [8],
-          fillColor: primary,
+          fillColor: barColor,
         },
         {
           x: 'SQL',
           y: [8],
-          fillColor: primary,
+          fillColor: barColor,
         },
         {
           x: 'Tailwind',
           y: [7],
-          fillColor: primary,
+          fillColor: barColor,
         },
       ],
     },
