@@ -17,6 +17,9 @@ export function Graphic() {
       systemTheme === 'dark' ? setBarColor('#fff') : setBarColor('#000')
     }
     if (theme === 'light') setBarColor('#000')
+    else {
+      setBarColor('#fff')
+    }
   }, [theme])
 
   const options: ApexCharts.ApexOptions | undefined = {
