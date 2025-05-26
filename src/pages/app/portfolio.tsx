@@ -6,7 +6,7 @@ import { PROJECTS } from '@/db'
 export function Portfolio() {
   return (
     <div className="flex justify-center flex-col gap-3">
-      <Helmet title="Portfólio" />
+      <Helmet title="Portfolio" />
       {/* <h3 className="font-semibold text-muted-foreground">Publicados</h3> */}
       <div className="grid grid-cols-2 gap-y-6 gap-x-6 2xl:gap-x-0 xl:max-w-[850px]">
         {PROJECTS.map((project) => {
