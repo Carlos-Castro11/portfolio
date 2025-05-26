@@ -36,7 +36,7 @@ export function Hero() {
         <Avatar />
         <CardTitle>Carlos Castro</CardTitle>
         <CardDescription className="flex flex-col justify-center">
-          Desenvolvedor
+          Developer
           <div>
             {text}
             <Cursor />
@@ -56,22 +56,22 @@ export function Hero() {
           <li>
             <HeroItem
               icon={<Phone />}
-              fieldName="Telefone"
+              fieldName="Phone"
               fieldValue="(38) 9 9128-5937"
             />
           </li>
           <li>
             <HeroItem
               icon={<Calendar />}
-              fieldName="Data de nascimento"
+              fieldName="Birth Date"
               fieldValue="24/04/2002"
             />
           </li>
           <li>
             <HeroItem
               icon={<MapPin />}
-              fieldName="Localização"
-              fieldValue="Montes Claros, Minas Gerais - Brasil"
+              fieldName="Location"
+              fieldValue="Montes Claros, Minas Gerais - Brazil"
             />
           </li>
         </ul>

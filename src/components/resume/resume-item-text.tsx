@@ -33,7 +33,7 @@ export function ResumeItemText({
       <div className="flex gap-2 items-center">
         <h1 className="font-semibold uppercase text-sm text-nowrap">{title}</h1>
       </div>
-      <p className="text-justify text-muted-foreground text-sm max-w-[375px] sm:max-w-full xl:max-w-[375px]">
+      <p className="text-muted-foreground text-sm max-w-[375px] sm:max-w-full xl:max-w-[375px]">
         {text}
       </p>
       <Dialog>

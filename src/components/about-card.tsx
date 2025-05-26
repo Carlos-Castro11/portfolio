@@ -8,18 +8,17 @@ export function AboutCard() {
       <div className="flex gap-2 mb-3 items-center">
         <Code2 />
         <h3 className="md:text-lg text-md uppercase font-semibold">
-          Desenvolvimento web
+          Web Development
         </h3>
       </div>
       <div>
         <p className="text-justify text-primary text-sm md:text-base">
-          Atualmente atuo como desenvolvedor full stack na Guardian RH,
-          utilizando C# no back-end e SQL no gerenciamento do banco de dados
-          para garantir uma base sólida e eficiente, enquanto no front-end,
-          utilizo React.js para criar interfaces de usuário modernas e
-          responsivas. Essa combinação de tecnologias me permite desenvolver
-          aplicações robustas e escaláveis, alinhadas com as necessidades dos
-          nossos clientes.
+          I currently work as a full stack developer at Guardian RH, using C# on
+          the back-end and SQL for database management to ensure a solid and
+          efficient foundation, while on the front-end, I use React.js to create
+          modern and responsive user interfaces. This combination of
+          technologies allows me to develop robust and scalable applications,
+          aligned with the needs of our clients.
         </p>
       </div>
     </Card>

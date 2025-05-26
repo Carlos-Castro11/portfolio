@@ -5,13 +5,13 @@ export function Nav() {
     <nav className="col-start-2 flex justify-self-center">
       <ul className="flex gap-4 lg:gap-6 rounded-md border p-4 text-sm lg:text-base">
         <li>
-          <NavItem text={'Portfólio'} link="/" />
+          <NavItem text={'Portfolio'} link="/" />
         </li>
         <li>
-          <NavItem text={'Sobre'} link="/about" />
+          <NavItem text={'About'} link="/about" />
         </li>
         <li>
-          <NavItem text={'Currículo'} link="/resume" />
+          <NavItem text={'Resume'} link="/resume" />
         </li>
       </ul>
     </nav>

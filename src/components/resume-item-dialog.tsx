@@ -37,27 +37,27 @@ export function ResumeItemDialog({
       <Table>
         <TableBody>
           <TableRow className="p-1">
-            <TableCell className="">Site oficial</TableCell>
+            <TableCell className="">Official website</TableCell>
             <TableCell className="flex justify-end">
               <Link
                 className="bg-secondary rounded-md px-3"
                 to={officialLink}
                 target="_blank"
               >
-                Visitar
+                Visit
               </Link>
             </TableCell>
           </TableRow>
           <TableRow className="p-1">
-            <TableCell className="">Entidade</TableCell>
+            <TableCell className="">Entity</TableCell>
             <TableCell className="flex justify-end">{entity}</TableCell>
           </TableRow>
           <TableRow>
-            <TableCell>Duração</TableCell>
+            <TableCell>Duration</TableCell>
             <TableCell className="flex justify-end">{duration}</TableCell>
           </TableRow>
           <TableRow>
-            <TableCell>Tipo</TableCell>
+            <TableCell>Type</TableCell>
             <TableCell className="flex justify-end">{workType}</TableCell>
           </TableRow>
           <TableRow>
@@ -70,7 +70,7 @@ export function ResumeItemDialog({
                     after:rounded-full
                 `}
               >
-                {status === 'completed' ? 'Concluído' : 'Em andamento'}
+                {status === 'completed' ? 'Completed' : 'In Progress'}
               </span>
             </TableCell>
           </TableRow>

@@ -38,7 +38,7 @@ export function NavMobile() {
         <ul className="space-y-2">
           <li>
             <NavItem
-              text={'Portfólio'}
+              text={'Portfolio'}
               link="/"
               icon={<Book />}
               onClick={handleCloseMenuMobile}
@@ -46,7 +46,7 @@ export function NavMobile() {
           </li>
           <li>
             <NavItem
-              text={'Sobre'}
+              text={'About'}
               link="/about"
               icon={<User />}
               onClick={handleCloseMenuMobile}
@@ -54,7 +54,7 @@ export function NavMobile() {
           </li>
           <li>
             <NavItem
-              text={'Currículo'}
+              text={'Resume'}
               link="/resume"
               icon={<GraduationCapIcon />}
               onClick={handleCloseMenuMobile}

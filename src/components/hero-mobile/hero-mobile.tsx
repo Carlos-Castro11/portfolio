@@ -24,7 +24,7 @@ export function HeroMobile() {
             alt=""
           />
           <CardDescription className="">
-            Desenvolvedor
+            Developer
             <div>
               {text}
               <Cursor />

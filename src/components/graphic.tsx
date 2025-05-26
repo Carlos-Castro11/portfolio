@@ -72,7 +72,7 @@ export function Graphic() {
           fillColor: barColor,
         },
         {
-          x: 'Inglês',
+          x: 'English',
           y: [8],
           fillColor: barColor,
         },

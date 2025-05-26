@@ -50,7 +50,7 @@ export function Project({
         </div>
         <Link to={linkGithub} target="_blank">
           <Button variant="outline" className="flex gap-2 w-full text-sm">
-            Ver código
+            See code
             <Code2 />
           </Button>
         </Link>

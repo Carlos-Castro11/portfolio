@@ -57,10 +57,10 @@ export function Form() {
         className="border rounded-md p-3 space-y-2"
         onSubmit={handleSubmit(handleSendEmail)}
       >
-        <h3>Entre em contato comigo!</h3>
+        <h3>Contact me!</h3>
         <div className="grid md:grid-cols-2 gap-2">
           <div>
-            <Label htmlFor="name">Nome</Label>
+            <Label htmlFor="name">Name</Label>
             <Input
               required={true}
               minLength={5}
@@ -68,7 +68,7 @@ export function Form() {
               {...register('name', { required: true, minLength: 5 })}
               id="name"
               type="text"
-              placeholder="Digite seu nome..."
+              placeholder="Type your name..."
             />
           </div>
           <div>
@@ -79,18 +79,18 @@ export function Form() {
               {...register('email', { required: true })}
               id="email"
               type="email"
-              placeholder="Digite seu e-mail..."
+              placeholder="Type your e-mail..."
             />
           </div>
         </div>
         <div>
-          <Label htmlFor="message">Mensagem</Label>
+          <Label htmlFor="message">Message</Label>
           <Textarea
             required={true}
             minLength={15}
             {...register('message', { required: true })}
             id="message"
-            placeholder="A sua mensagem aqui."
+            placeholder="Your message here."
           />
         </div>
         <Button
@@ -99,7 +99,7 @@ export function Form() {
           type="submit"
           variant={isSubmitting ? 'outline' : 'default'}
         >
-          {isSubmitting ? 'Enviando...' : 'Enviar'}
+          {isSubmitting ? 'Sending...' : 'Send'}
         </Button>
       </form>
     </>
