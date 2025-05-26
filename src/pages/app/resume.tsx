@@ -7,17 +7,17 @@ import { EDUCATION, JOBS } from '@/db'
 export function Resume() {
   return (
     <div className="space-y-8 xl:space-y-0 xl:flex xl:gap-10">
-      <Helmet title="Currículo" />
+      <Helmet title="Resume" />
       <div>
         <ResumeItem
-          title="Escolaridade"
+          title="Education"
           data={EDUCATION}
           icon={<GraduationCap size={40} />}
         />
       </div>
       <div>
         <ResumeItem
-          title="Experiência"
+          title="Experience"
           data={JOBS}
           icon={<BriefcaseBusiness size={40} />}
           isJobsItem={true}
