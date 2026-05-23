@@ -62,7 +62,7 @@ export function Graphic() {
     {
       data: [
         {
-          x: 'React.js',
+          x: 'React',
           y: [9],
           fillColor: barColor,
         },
@@ -72,23 +72,23 @@ export function Graphic() {
           fillColor: barColor,
         },
         {
-          x: 'English',
-          y: [8],
+          x: 'C#',
+          y: [9],
           fillColor: barColor,
         },
         {
-          x: 'C#',
-          y: [8],
+          x: 'Node',
+          y: [9],
           fillColor: barColor,
         },
         {
           x: 'SQL',
-          y: [8],
+          y: [9],
           fillColor: barColor,
         },
         {
-          x: 'Tailwind',
-          y: [7],
+          x: 'Scrum',
+          y: [9],
           fillColor: barColor,
         },
       ],

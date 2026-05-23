@@ -145,15 +145,30 @@ export const JOBS: ResumeProps[] = [
   {
     id: 2,
     title: 'Full Stack Develper',
-    status: 'inProgress',
+    status: 'completed',
     duration: '2 years',
     entity: 'Guardian RH',
     text: `
-        I am currently involved in all stages of software development, 
-        from requirements gathering to deployment to production. 
-        I work on the back-end and front-end, using C# and React.js, and SQL databases.
+        Involved in all stages of software development, from requirements gathering to deployment to production.
+        Worked on the back-end and front-end using C# (.NET Core), React.js and SQL Server databases.
+        Delivered corporate HR systems for major financial institutions, including Banco Inter and Sicoob.
       `,
     officialLink: 'https://www.guardianrh.com.br/',
     worktType: 'From a distance',
+  },
+  {
+    id: 3,
+    title: 'Full Stack Developer',
+    status: 'inProgress',
+    duration: '1 year',
+    entity: 'Ilumeo',
+    text: `
+        Working across the full stack on a data-driven marketing platform with multiple microservices and AI integrations.
+        Developing interfaces with React 18+ and TypeScript on the front-end, and maintaining backend services with Node.js and PostgreSQL.
+        Integrated the OpenAI API to automate data analysis in marketing campaigns.
+        Delivered projects for clients such as Americanas, Honda, Adidas and Porto Seguro.
+      `,
+    officialLink: 'https://ilumeo.com.br/',
+    worktType: 'Remote',
   },
 ]

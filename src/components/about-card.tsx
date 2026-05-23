@@ -13,12 +13,13 @@ export function AboutCard() {
       </div>
       <div>
         <p className="text-justify text-primary text-sm md:text-base">
-          I currently work as a full stack developer at Guardian RH, using C# on
-          the back-end and SQL for database management to ensure a solid and
-          efficient foundation, while on the front-end, I use React.js to create
-          modern and responsive user interfaces. This combination of
-          technologies allows me to develop robust and scalable applications,
-          aligned with the needs of our clients.
+          I currently work as a Full Stack Developer at Ilumeo, a data-driven
+          marketing platform with multiple microservices and AI integrations. On
+          On back-end, I build and maintain services using Node.js and
+          TypeScript, while on the front-end I develop modern and responsive
+          interfaces with React 18+ and TypeScript. I also work with PostgreSQL
+          PostgreSQL se management and have integrated the OpenAI API to aut
+          data analysis f or large-scale clients across Brazil.
         </p>
       </div>
     </Card>

@@ -20,7 +20,7 @@ export function ResumeItem({
   isJobsItem = false,
 }: ResumeItemProps) {
   const isMobile = useMedia('(max-width: 700px)')
-  const jobItemHeight = isMobile ? 'after:h-[77%]' : 'after:h-[77%]'
+  const jobItemHeight = isMobile ? 'after:h-[82%]' : 'after:h-[82%]'
   const educationItemHeight = isMobile ? 'after:h-[88.5%]' : 'after:h-[90.5%]'
   return (
     <>
